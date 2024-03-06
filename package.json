@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "1.1.0",
   "description": "",
-  "homepage": "https://RoksanaKor.github.io/goit-js-group-03",
+  "homepage": "https://RoksanaKor.github.io/goit-js-group--OWN-WORK",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-group-03/"
+    "build": "parcel build src/*.html --public-url /goit-js-group-OWN-WORK/"
   },
   "repository": {
     "type": "git",
