@@ -1,0 +1,14 @@
+@import url("./footer.css");
+@import url("./header-home.css");
+@import url("./header-library.css");
+
+.container,
+.footer {
+ margin: 0 auto;
+ max-width: 280px;
+}
+
+.footer-container {
+ max-height: 100px;
+ display: inline;
+}
