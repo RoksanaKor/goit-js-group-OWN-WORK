@@ -1,6 +1,7 @@
 header {
  background-image: url(../images/mobile-home-bg.jpg);
  background-repeat: no-repeat;
+ background-size: 100% 216px;
  height: 216px;
  max-width: 320px;
  margin: 0 auto;
