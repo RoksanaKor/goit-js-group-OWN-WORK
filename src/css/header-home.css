@@ -1,3 +1,190 @@
 header {
  background-image: url(../images/mobile-home-bg.jpg);
+ background-repeat: no-repeat;
+ height: 216px;
+ max-width: 320px;
+ margin: 0 auto;
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 72dpi),
+(min-resolution: 2dppx) {
+ header {
+  background-image: url(../images/2x-mobile-home-bg.jpg);
+ }
+}
+
+
+.header-logo {
+ display: flex;
+ align-items: center;
+ gap: 5px;
+}
+
+.header-logo p {
+ font-size: 30px;
+ font-weight: 500;
+ display: none;
+ margin: 0;
+}
+
+.header-links {
+ display: flex;
+ gap: 40px;
+ font-size: 12px;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.header-links a {
+ text-decoration: none;
+ color: inherit;
+}
+
+.header-nav {
+ display: flex;
+ justify-content: space-between;
+ padding-top: 40px;
+ padding-bottom: 55px;
+}
+
+.header-form {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+
+}
+
+.search-form {
+ display: flex;
+ width: 280px;
+ justify-content: space-between;
+ align-items: center;
+ position: relative;
+}
+
+.search-form::after {
+ position: absolute;
+ content: '';
+ background: #FFF;
+ height: 0.5px;
+ width: 100%;
+ bottom: -4px;
+ left: 0;
+
+}
+
+.search-form input {
+ border: none;
+ background-color: transparent;
+ font-size: 14px;
+ font-weight: 400;
+ width: 265px;
+ color: inherit;
+}
+
+.search-form input::placeholder {
+ color: #fff;
+}
+
+.search-form button {
+ background-color: transparent;
+ border: none;
+ padding: 1px 0 1px 0;
+}
+
+.errorDisplay {
+ font-size: 14px;
+ font-weight: 400;
+ color: #FF001B;
+ margin-top: 16px;
+}
+
+#home {
+ position: relative;
+}
+
+#home::after {
+ content: '';
+ background: #FF001B;
+ height: 3px;
+ width: 100%;
+ position: absolute;
+ bottom: -3px;
+ left: 0;
+}
+
+
+@media (min-width: 769px) and (max-width: 1280px) {
+ header {
+  background-image: url(../images/tablet-home-bg.jpg);
+  max-width: 768px;
+ }
+
+ @media (min-device-pixel-ratio: 2),
+ (-webkit-min-device-pixel-ratio: 2),
+ (min-resolution: 72dpi),
+ (min-resolution: 2dppx) {
+  header {
+   background-image: url(../images/2x-tablet-home-bg.jpg);
+  }
+ }
+
+ .header-logo p {
+  display: flex;
+ }
+
+ .header-nav {
+  padding-bottom: 40px;
+ }
+
+ .search-form {
+  width: 336px;
+ }
+
+ .search-form input {
+  width: 320px;
+ }
+
+ .errorDisplay {
+  margin-top: 20px;
+ }
+}
+
+
+@media (min-width: 1281px) {
+ header {
+  background-image: url(../images/desktop-home-bg.jpg);
+  max-width: 1280px;
+ }
+
+ @media (min-device-pixel-ratio: 2),
+ (-webkit-min-device-pixel-ratio: 2),
+ (min-resolution: 72dpi),
+ (min-resolution: 2dppx) {
+  header {
+   background-image: url(../images/2x-desktop-home-bg.jpg);
+  }
+ }
+
+ .header-logo p {
+  display: flex;
+ }
+
+ .header-nav {
+  padding-bottom: 40px;
+ }
+
+ .search-form {
+  width: 394px;
+ }
+
+ .search-form input {
+  width: 380px;
+ }
+
+ .errorDisplay {
+  margin-top: 20px;
+ }
 }

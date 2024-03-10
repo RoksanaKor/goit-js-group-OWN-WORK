@@ -4,13 +4,35 @@
 @import url("./modal.css");
 @import url("./goit-modal.css");
 
+:root {
+ color: #fff;
+ font-family: Roboto;
+}
+
 .container,
 .footer {
  margin: 0 auto;
- max-width: 280px;
+ width: 280px;
 }
 
 .footer-container {
  max-height: 100px;
  display: inline;
+}
+
+@media (min-width: 769px) and (max-width: 1280px) {
+
+ .container,
+ .footer {
+  width: 704px;
+ }
+}
+
+
+@media (min-width: 1281px) {
+
+ .container,
+ .footer {
+  width: 1123px;
+ }
 }
